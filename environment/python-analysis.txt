@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+pysam
+pyfaidx
+pyBigWig
+h5py
+dask
+pyarrow
+torch
+tensorqtl==1.0.10
+edlib
+intervaltree

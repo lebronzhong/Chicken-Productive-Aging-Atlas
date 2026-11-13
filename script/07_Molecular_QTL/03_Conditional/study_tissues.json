@@ -1,0 +1,32 @@
+{
+  "partition_tissues": [
+    "Cerebellum",
+    "Heart",
+    "Ileum",
+    "Jejunum",
+    "Kidney",
+    "Lung",
+    "Spleen",
+    "Trachea"
+  ],
+  "all_tissues": [
+    "Adipose",
+    "Cecum",
+    "Cerebellum",
+    "Duodenum",
+    "Heart",
+    "Hypothalamus",
+    "Ileum",
+    "Jejunum",
+    "Kidney",
+    "Liver",
+    "Lung",
+    "Muscle",
+    "Ovary",
+    "Oviduct",
+    "Pituitary",
+    "Retina",
+    "Spleen",
+    "Trachea"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "7b": {
+    "stage": "full",
+    "config": {
+      "query_gtf": "/path/to/chicken-aging/ont/shell/10_20240903.gffcompare/9.6_final_gtf/9.9_finalgtf_annotated_rename.gtf",
+      "genome_6a": "/path/to/chicken-aging/reference/galGal6/Ensemble/Gallus_gallus.GRCg6a.dna_sm.toplevel.fa",
+      "genome_7b": "/path/to/chicken-aging/ont/Ref/7b/GCF_016699485.2_bGalGal1.mat.broiler.GRCg7b_genomic_chr.fna",
+      "reference_7b": "/path/to/chicken-aging/ont/Ref/7b/Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.114.chr.gtf",
+      "reference_7b_refseq": "/path/to/chicken-aging/ont/Ref/7b/GCF_016699485.2_bGalGal1.mat.broiler.GRCg7b_genomic.gtf",
+      "assembly_report": "/path/to/chicken-aging/analysis/annotation_comparison/resources/GRCg7b_assembly_report.txt",
+      "expected_query_sha256": "17baa741ea4a192915d0c86d9c01cbc50c705e2cb35f9aba6f4e69b28c87111d",
+      "expected_genome_6a_sha256": "aec48781d2fedf94ceb5ee9fc4dc6933cce60b5a252ce1c96194a9b9c8deab86",
+      "expected_assembly_report_sha256": "f3b5d0a022d213bf1053bd1aa6d53a1c59ef4d2a4180c97747f9de290e15cbec",
+      "expected_query_models": 263644,
+      "expected_query_chains": 211581,
+      "pilot_genes": 200,
+      "gene_min_coverage": 0.98,
+      "gene_min_identity": 0.95,
+      "exon_min_identity": 0.95,
+      "exon_min_length_ratio": 0.9,
+      "exon_max_length_ratio": 1.1,
+      "max_ambiguous_base_fraction": 0.01,
+      "min_primary_mapq": 30,
+      "secondary_score_ratio": 0.9,
+      "require_preserved_splice_motifs": true,
+      "work_dir": "/path/to/chicken-aging/analysis/annotation_comparison/work_7b"
+    },
+    "prepare_directory": "/path/to/chicken-aging/analysis/annotation_comparison/work_7b/prepare_20260930T024155_444356Z",
+    "input_provenance": {
+      "query_gtf": {
+        "path": "/path/to/chicken-aging/ont/shell/10_20240903.gffcompare/9.6_final_gtf/9.9_finalgtf_annotated_rename.gtf",
+        "sha256": "17baa741ea4a192915d0c86d9c01cbc50c705e2cb35f9aba6f4e69b28c87111d"
+      },
+      "genome_6a": {
+        "path": "/path/to/chicken-aging/reference/galGal6/Ensemble/Gallus_gallus.GRCg6a.dna_sm.toplevel.fa",
+        "sha256": "aec48781d2fedf94ceb5ee9fc4dc6933cce60b5a252ce1c96194a9b9c8deab86"
+      },
+      "genome_7b": {
+        "path": "/path/to/chicken-aging/ont/Ref/7b/GCF_016699485.2_bGalGal1.mat.broiler.GRCg7b_genomic_chr.fna",
+        "sha256": "5145f2bec78346576096b9bb80267d45b167ac8e5a56c281b83b665d7046d03a"
+      },
+      "reference_7b": {
+        "path": "/path/to/chicken-aging/ont/Ref/7b/Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.114.chr.gtf",
+        "sha256": "7402823b72b046ddcfdb843377bd66d308927d3c37ec2b3f1dc60771c52e2e7a"
+      },
+      "reference_7b_refseq": {
+        "path": "/path/to/chicken-aging/ont/Ref/7b/GCF_016699485.2_bGalGal1.mat.broiler.GRCg7b_genomic.gtf",
+        "sha256": "6c8f545b69807cc1a131caaf977f62b744a61af82e892159639bbd5c2f65f761"
+      },
+      "assembly_report": {
+        "path": "/path/to/chicken-aging/analysis/annotation_comparison/resources/GRCg7b_assembly_report.txt",
+        "sha256": "f3b5d0a022d213bf1053bd1aa6d53a1c59ef4d2a4180c97747f9de290e15cbec"
+      }
+    },
+    "tools": {
+      "liftoff": "v1.6.3",
+      "minimap2": "2.28-r1209"
+    }
+  },
+  "7w": {
+    "stage": "full",
+    "config": {
+      "query_gtf": "/path/to/chicken-aging/ont/shell/10_20240903.gffcompare/9.6_final_gtf/9.9_finalgtf_annotated_rename.gtf",
+      "genome_6a": "/path/to/chicken-aging/reference/galGal6/Ensemble/Gallus_gallus.GRCg6a.dna_sm.toplevel.fa",
+      "genome_7w": "/path/to/chicken-aging/ont/Ref/7b/Gallus_gallus_gca016700215v2.bGalGal1.pat.whiteleghornlayer.GRCg7w.dna.toplevel.fa",
+      "reference_7w": "/path/to/chicken-aging/analysis/annotation_comparison/resources_7w/Gallus_gallus_gca016700215v2.bGalGal1.pat.whiteleghornlayer.GRCg7w.114.gtf.gz",
+      "assembly_report": "/path/to/chicken-aging/analysis/annotation_comparison/resources_7w/GRCg7w_assembly_report.txt",
+      "expected_query_sha256": "17baa741ea4a192915d0c86d9c01cbc50c705e2cb35f9aba6f4e69b28c87111d",
+      "expected_genome_6a_sha256": "aec48781d2fedf94ceb5ee9fc4dc6933cce60b5a252ce1c96194a9b9c8deab86",
+      "expected_assembly_report_sha256": "7222f7b357679a544c0d332bbce396d95c75541b3ba4834406d0a63c5e1931e3",
+      "expected_query_models": 263644,
+      "expected_query_chains": 211581,
+      "pilot_genes": 200,
+      "gene_min_coverage": 0.98,
+      "gene_min_identity": 0.95,
+      "exon_min_identity": 0.95,
+      "exon_min_length_ratio": 0.9,
+      "exon_max_length_ratio": 1.1,
+      "max_ambiguous_base_fraction": 0.01,
+      "min_primary_mapq": 30,
+      "secondary_score_ratio": 0.9,
+      "require_preserved_splice_motifs": true,
+      "work_dir": "/path/to/chicken-aging/analysis/annotation_comparison/work_7w"
+    },
+    "prepare_directory": "/path/to/chicken-aging/analysis/annotation_comparison/work_7w/prepare_20260930T094025_331399Z",
+    "input_provenance": {
+      "query_gtf": {
+        "path": "/path/to/chicken-aging/ont/shell/10_20240903.gffcompare/9.6_final_gtf/9.9_finalgtf_annotated_rename.gtf",
+        "sha256": "17baa741ea4a192915d0c86d9c01cbc50c705e2cb35f9aba6f4e69b28c87111d"
+      },
+      "genome_6a": {
+        "path": "/path/to/chicken-aging/reference/galGal6/Ensemble/Gallus_gallus.GRCg6a.dna_sm.toplevel.fa",
+        "sha256": "aec48781d2fedf94ceb5ee9fc4dc6933cce60b5a252ce1c96194a9b9c8deab86"
+      },
+      "genome_7w": {
+        "path": "/path/to/chicken-aging/ont/Ref/7b/Gallus_gallus_gca016700215v2.bGalGal1.pat.whiteleghornlayer.GRCg7w.dna.toplevel.fa",
+        "sha256": "9add8a8cd7f061a8a7340247e2c2eeacab4976992693cda7d8e4698639b786e2"
+      },
+      "reference_7w": {
+        "path": "/path/to/chicken-aging/analysis/annotation_comparison/resources_7w/Gallus_gallus_gca016700215v2.bGalGal1.pat.whiteleghornlayer.GRCg7w.114.gtf.gz",
+        "sha256": "1a9ef15a98caf44a5a272b71891d9a694f54c29f2cb1d26a418229cc38bb5bcf"
+      },
+      "assembly_report": {
+        "path": "/path/to/chicken-aging/analysis/annotation_comparison/resources_7w/GRCg7w_assembly_report.txt",
+        "sha256": "7222f7b357679a544c0d332bbce396d95c75541b3ba4834406d0a63c5e1931e3"
+      }
+    },
+    "tools": {
+      "liftoff": "v1.6.3",
+      "minimap2": "2.28-r1209"
+    }
+  }
+}

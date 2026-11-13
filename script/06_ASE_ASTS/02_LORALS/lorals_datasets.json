@@ -1,0 +1,85 @@
+{
+  "datasets": {
+    "20wk_data": {
+      "age": "20",
+      "root": "20wk_data/20wk_ONTdata",
+      "mode": "age_dash"
+    },
+    "50wk_data": {
+      "age": "50",
+      "root": "50wk_data/50wk_ONTdata",
+      "mode": "age_dash"
+    },
+    "80wk_data": {
+      "age": "80",
+      "root": "80wk_data/80wk_ONTdata",
+      "mode": "number_only"
+    },
+    "100wk_data": {
+      "age": "100",
+      "root": "100wk_data/100wk_ONTdata",
+      "mode": "age_dash"
+    },
+    "M_data": {
+      "age": "M",
+      "root": "M_data/M_ONTdata",
+      "mode": "M_dash"
+    }
+  },
+  "tissue_aliases": {
+    "retina": [
+      "Retina"
+    ],
+    "trachea": [
+      "Trachea"
+    ],
+    "muscle": [
+      "Thigh_muscle"
+    ],
+    "heart": [
+      "Heart"
+    ],
+    "adipose": [
+      "Adipose"
+    ],
+    "spleen": [
+      "Spleen"
+    ],
+    "liver": [
+      "Liver"
+    ],
+    "hypothalamus": [
+      "Hypothalamus"
+    ],
+    "pituitary": [
+      "Pituitary"
+    ],
+    "cerebellum": [
+      "Cerebellum"
+    ],
+    "lung": [
+      "Lung"
+    ],
+    "ovary": [
+      "Ovary"
+    ],
+    "kidney": [
+      "Kidney"
+    ],
+    "cecum": [
+      "Cecum"
+    ],
+    "ileum": [
+      "Ileum"
+    ],
+    "jejunum": [
+      "Jejunum"
+    ],
+    "duodenum": [
+      "Duodenum"
+    ],
+    "magnum": [
+      "Magnum"
+    ]
+  }
+}

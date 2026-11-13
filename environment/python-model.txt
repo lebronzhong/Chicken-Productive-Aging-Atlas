@@ -1,0 +1,9 @@
+tensorflow==2.15.1
+numpy
+pandas
+scipy
+pysam
+pyBigWig
+h5py
+intervaltree
+# Install Baskerville from the recorded checkout separately.

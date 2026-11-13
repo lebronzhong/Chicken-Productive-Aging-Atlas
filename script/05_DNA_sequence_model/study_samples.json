@@ -1,0 +1,124 @@
+{
+  "PREFIXES": [
+    "Adipose",
+    "Cecum",
+    "Cerebellum",
+    "Duodenum",
+    "Heart",
+    "Hypothalamus",
+    "Ileum",
+    "Jejunum",
+    "Kidney",
+    "Liver",
+    "Lung",
+    "Magnum",
+    "Ovary",
+    "Pituitary",
+    "Retina",
+    "Spleen",
+    "Thigh_muscle",
+    "Trachea",
+    "Cerebrum",
+    "Crop",
+    "Esophagus",
+    "Gallbladder",
+    "Gizzard",
+    "Infundibulum",
+    "Isthmus",
+    "Medulla_oblongata",
+    "Olfactory_bulb",
+    "Pancreas",
+    "Pectoral",
+    "Rectum",
+    "Proventriculus",
+    "Uterine",
+    "Vignia"
+  ],
+  "NAMES": {
+    "Adipose": "adipose",
+    "Cecum": "cecum",
+    "Cerebellum": "cerebellum",
+    "Duodenum": "duodenum",
+    "Heart": "heart",
+    "Hypothalamus": "hypothalamus",
+    "Ileum": "ileum",
+    "Jejunum": "jejunum",
+    "Kidney": "kidney",
+    "Liver": "liver",
+    "Lung": "lung",
+    "Magnum": "magnum",
+    "Ovary": "ovary",
+    "Pituitary": "pituitary",
+    "Retina": "retina",
+    "Spleen": "spleen",
+    "Thigh_muscle": "thigh_muscle",
+    "Trachea": "trachea",
+    "Cerebrum": "cerebrum",
+    "Crop": "crop",
+    "Esophagus": "esophagus",
+    "Gallbladder": "gallbladder",
+    "Gizzard": "gizzard",
+    "Infundibulum": "infundibulum",
+    "Isthmus": "isthmus",
+    "Medulla_oblongata": "medulla_oblongata",
+    "Olfactory_bulb": "olfactory_bulb",
+    "Pancreas": "pancreas",
+    "Pectoral": "pectoral_muscle",
+    "Rectum": "rectum",
+    "Proventriculus": "proventriculus",
+    "Uterine": "uterus",
+    "Vignia": "vagina"
+  },
+  "GROUPS": {
+    "20wk": [
+      "20",
+      [
+        1,
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "50wk": [
+      "50",
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "80wk": [
+      "",
+      [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "100wk": [
+      "100",
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "M": [
+      "M",
+      [
+        1,
+        3,
+        4,
+        5,
+        6
+      ]
+    ]
+  }
+}

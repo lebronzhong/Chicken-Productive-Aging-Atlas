@@ -1,0 +1,17 @@
+{
+  "epochs_completed": 40,
+  "training_runtime": "TensorFlow 2.15.1; float32; NVIDIA A800-SXM4-80GB",
+  "baskerville_tf_commit": "b06950be1be704ab09ab23ffb6f5102d9e2a63a0",
+  "checkpoint_criterion": "fit_tape: validation mean Pearson r + validation mean predictive R2 / 4",
+  "checkpoint": "runs/medium_33_full_v1/model_best.h5",
+  "checkpoint_sha256_previously_verified": "308bd3f469867220063bd6672490b578c2b370a9fcd3e44b80cb43be74dfbd68",
+  "sequence_length": 393216,
+  "bin_width": 32,
+  "window_counts": {
+    "train": 5403,
+    "valid": 241,
+    "test": 223
+  },
+  "sequences_sha256": "e5cfcb8232e6522cc2e32e0571d5c8bec27c0849f095aaa76e8142bf1579988c",
+  "chromosome_splits_sha256": "aa37b3d4a485e8e327fb6320cb9909b4b975bb211acb787f806d4b4faac8b0a0"
+}

@@ -1,0 +1,618 @@
+[
+  {
+    "file": "script/01_Transcriptome/01_Read_processing/process_reads.sh",
+    "runtime": "ont/shell/process_reads.sh"
+  },
+  {
+    "file": "script/01_Transcriptome/02_Assembly/reconstruct_transcripts.sh",
+    "runtime": "ont/shell/reconstruct_transcripts.sh"
+  },
+  {
+    "file": "script/01_Transcriptome/02_Assembly/merge_annotations.sh",
+    "runtime": "ont/shell/merge_annotations.sh"
+  },
+  {
+    "file": "script/01_Transcriptome/03_ORF_annotation/annotate_orfs.sh",
+    "runtime": "core/01_Transcriptome/03_ORF_annotation/annotate_orfs.sh"
+  },
+  {
+    "file": "script/01_Transcriptome/03_ORF_annotation/rename_orf_records.py",
+    "runtime": "ont/shell/10_20240903.gffcompare/9.6_final_gtf/rename_orf_records.py"
+  },
+  {
+    "file": "script/01_Transcriptome/03_ORF_annotation/rename_gtf_gene_id.py",
+    "runtime": "ont/shell/10_20240903.gffcompare/9.6_final_gtf/rename_gtf_gene_id.py"
+  },
+  {
+    "file": "script/01_Transcriptome/03_ORF_annotation/run_sqanti.sh",
+    "runtime": "ont/shell/run_sqanti.sh"
+  },
+  {
+    "file": "script/01_Transcriptome/04_Reference_comparison/gtf_utils.py",
+    "runtime": "analysis/annotation_comparison/gtf_utils.py"
+  },
+  {
+    "file": "script/01_Transcriptome/04_Reference_comparison/chain_metrics_lib.py",
+    "runtime": "analysis/annotation_comparison/chain_metrics_lib.py"
+  },
+  {
+    "file": "script/01_Transcriptome/04_Reference_comparison/pipeline_7b.py",
+    "runtime": "analysis/annotation_comparison/pipeline_7b.py"
+  },
+  {
+    "file": "script/01_Transcriptome/04_Reference_comparison/pipeline_7w.py",
+    "runtime": "analysis/annotation_comparison/pipeline_7w.py"
+  },
+  {
+    "file": "script/01_Transcriptome/04_Reference_comparison/query_oriented_six_resources.py",
+    "runtime": "analysis/annotation_comparison/query_oriented_six_resources.py"
+  },
+  {
+    "file": "script/01_Transcriptome/05_Short_read_validation/gtf_utils.py",
+    "runtime": "analysis/short_read_validation/scripts/gtf_utils.py"
+  },
+  {
+    "file": "script/01_Transcriptome/05_Short_read_validation/batch_samples.py",
+    "runtime": "analysis/short_read_validation/scripts/batch_samples.py"
+  },
+  {
+    "file": "script/01_Transcriptome/05_Short_read_validation/validation.py",
+    "runtime": "analysis/short_read_validation/scripts/validation.py"
+  },
+  {
+    "file": "script/01_Transcriptome/05_Short_read_validation/gene_counts.py",
+    "runtime": "analysis/short_read_validation/scripts/gene_counts.py"
+  },
+  {
+    "file": "script/01_Transcriptome/05_Short_read_validation/summarize_splice_support.py",
+    "runtime": "analysis/short_read_validation/scripts/summarize_splice_support.py"
+  },
+  {
+    "file": "script/01_Transcriptome/05_Short_read_validation/summarize_expression.py",
+    "runtime": "analysis/short_read_validation/scripts/summarize_expression.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/01_Quantification/requantify_group.sh",
+    "runtime": "ont/shell/requantify_group.sh"
+  },
+  {
+    "file": "script/02_Expression_dynamics/02_Specificity/compute_specificity.py",
+    "runtime": "analysis/specificity/compute_specificity.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/02_Specificity/age_union_analysis.py",
+    "runtime": "analysis/specificity/age_union_analysis.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/02_Specificity/run_tspex.R",
+    "runtime": "analysis/specificity/run_tspex.R"
+  },
+  {
+    "file": "script/02_Expression_dynamics/03_Timing/timing_score.R",
+    "runtime": "analysis/timing/timing_score.R"
+  },
+  {
+    "file": "script/02_Expression_dynamics/04_Age_models/prepare_age_expression.py",
+    "runtime": "analysis/expression_models/prepare_age_expression.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/04_Age_models/fit_age_expression.R",
+    "runtime": "analysis/expression_models/fit_age_expression.R"
+  },
+  {
+    "file": "script/02_Expression_dynamics/05_Isoform_dynamics/export_inputs.R",
+    "runtime": "analysis/four_age/export_inputs.R"
+  },
+  {
+    "file": "script/02_Expression_dynamics/05_Isoform_dynamics/test_isoform_dynamics.py",
+    "runtime": "analysis/four_age/test_isoform_dynamics.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/05_Isoform_dynamics/summarize_isoform_dynamics.py",
+    "runtime": "analysis/four_age/summarize_isoform_dynamics.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/05_Isoform_dynamics/compact_background.py",
+    "runtime": "analysis/four_age/compact_background.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/05_Isoform_dynamics/conservation_endpoint.py",
+    "runtime": "analysis/four_age/conservation_endpoint.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/06_Clustering/within_tissue_loess.R",
+    "runtime": "analysis/cluster/within_tissue_loess.R"
+  },
+  {
+    "file": "script/02_Expression_dynamics/06_Clustering/within_tissue_zscore.R",
+    "runtime": "analysis/cluster/within_tissue_zscore.R"
+  },
+  {
+    "file": "script/02_Expression_dynamics/06_Clustering/pooled_kmeans.py",
+    "runtime": "analysis/cluster/pooled_kmeans.py"
+  },
+  {
+    "file": "script/02_Expression_dynamics/07_GO_enrichment/enrich_cluster_go.R",
+    "runtime": "analysis/cluster_GO/enrich_cluster_go.R"
+  },
+  {
+    "file": "script/02_Expression_dynamics/08_Motif/prepare_promoters.sh",
+    "runtime": "analysis/motif/prepare_promoters.sh"
+  },
+  {
+    "file": "script/02_Expression_dynamics/08_Motif/run_ame.sh",
+    "runtime": "analysis/motif/run_ame.sh"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/01_SUPPA/suppa_analysis.sh",
+    "runtime": "core/03_Splicing_and_usage/01_SUPPA/suppa_analysis.sh"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/02_Count_DTU/prepare_dtu_counts.py",
+    "runtime": "analysis/count_DTU/scripts/prepare_dtu_counts.py"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/02_Count_DTU/fit_usage.R",
+    "runtime": "analysis/count_DTU/scripts/fit_usage.R"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/02_Count_DTU/annotate_structures.py",
+    "runtime": "analysis/count_DTU/scripts/annotate_structures.py"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/02_Count_DTU/refine_domains.py",
+    "runtime": "analysis/count_DTU/scripts/refine_domains.py"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/02_Count_DTU/summarize_results.py",
+    "runtime": "analysis/count_DTU/scripts/summarize_results.py"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/03_Isoform_PSI/prepare_psi.py",
+    "runtime": "analysis/isoform_PSI/scripts/prepare_psi.py"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/03_Isoform_PSI/fit_original_PSI.R",
+    "runtime": "analysis/isoform_PSI/scripts/fit_original_PSI.R"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/03_Isoform_PSI/summarize_psi.py",
+    "runtime": "analysis/isoform_PSI/scripts/summarize_psi.py"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/03_Isoform_PSI/functional_psi.py",
+    "runtime": "analysis/isoform_PSI/scripts/functional_psi.py"
+  },
+  {
+    "file": "script/03_Splicing_and_usage/04_Usage_clusters/cluster_psi.py",
+    "runtime": "analysis/usage_clusters/cluster_psi.py"
+  },
+  {
+    "file": "script/04_FIM/01_Expression_recovery/expression_recovery_index.py",
+    "runtime": "analysis/FIM_expression/expression_recovery_index.py"
+  },
+  {
+    "file": "script/04_FIM/01_Expression_recovery/fit_fim_expression.R",
+    "runtime": "analysis/FIM_expression/fit_fim_expression.R"
+  },
+  {
+    "file": "script/04_FIM/02_Usage_recovery/prepare_global.py",
+    "runtime": "analysis/FIM_usage/scripts/prepare_global.py"
+  },
+  {
+    "file": "script/04_FIM/02_Usage_recovery/prepare_tissue.py",
+    "runtime": "analysis/FIM_usage/scripts/prepare_tissue.py"
+  },
+  {
+    "file": "script/04_FIM/02_Usage_recovery/fit_fim_usage.R",
+    "runtime": "analysis/FIM_usage/scripts/fit_fim_usage.R"
+  },
+  {
+    "file": "script/04_FIM/02_Usage_recovery/collect_statistics.py",
+    "runtime": "analysis/FIM_usage/scripts/collect_statistics.py"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/prepare_tfrecords_33.py",
+    "runtime": "model/experiment33/prepare_tfrecords_33.py",
+    "additional_runtime": []
+  },
+  {
+    "file": "script/05_DNA_sequence_model/prepare_test_masks_33.py",
+    "runtime": "model/experiment33/prepare_test_masks_33.py"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/test_metrics_33.py",
+    "runtime": "model/experiment33/test_metrics_33.py",
+    "additional_runtime": [
+      "model/experiment33/gpu_scripts/test_metrics_33.py"
+    ]
+  },
+  {
+    "file": "script/05_DNA_sequence_model/params_medium_33.json",
+    "runtime": "model/experiment33/gpu_scripts/params_medium_33.json"
+  },
+  {
+    "file": "script/06_ASE_ASTS/01_WGS/wgs_variant_calling.sh",
+    "runtime": "core/06_ASE_ASTS/01_WGS/wgs_variant_calling.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/prepare_common.sh",
+    "runtime": "allelic/scripts/prepare_common.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/prepare_vcfs.sh",
+    "runtime": "allelic/scripts/prepare_vcfs.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/call_ase.sh",
+    "runtime": "allelic/scripts/call_ase.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/annotate_ase.sh",
+    "runtime": "allelic/scripts/annotate_ase.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/align_transcripts.sh",
+    "runtime": "allelic/scripts/align_transcripts.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/call_asts.sh",
+    "runtime": "allelic/scripts/call_asts.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/summarize_genes.sh",
+    "runtime": "allelic/scripts/summarize_genes.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/postprocess_ase.py",
+    "runtime": "allelic/scripts/postprocess_ase.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/summarize_sample.py",
+    "runtime": "allelic/scripts/summarize_sample.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/03_QTL_correspondence/extract_allelic_sites.py",
+    "runtime": "analysis/allelic_QTL/extract_allelic_sites.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/03_QTL_correspondence/extract_nominal.py",
+    "runtime": "analysis/allelic_QTL/extract_nominal.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/03_QTL_correspondence/build_analysis_tables.py",
+    "runtime": "analysis/allelic_QTL/build_analysis_tables.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/03_QTL_correspondence/test_allelic_qtl_associations.R",
+    "runtime": "analysis/allelic_QTL/test_allelic_qtl_associations.R"
+  },
+  {
+    "file": "script/06_ASE_ASTS/03_QTL_correspondence/aggregate_requests.py",
+    "runtime": "analysis/allelic_QTL/aggregate_requests.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/transcript_eqtl_standard_pipeline/scripts/prepare_transcript_qtl_bed.py",
+    "runtime": "qtl/transcript_eqtl_standard_pipeline/scripts/prepare_transcript_qtl_bed.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/transcript_eqtl_standard_pipeline/scripts/split_bed_by_chr.py",
+    "runtime": "qtl/transcript_eqtl_standard_pipeline/scripts/split_bed_by_chr.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/transcript_eqtl_standard_pipeline/scripts/run_eqtl_step1_nominal_only.sh",
+    "runtime": "qtl/transcript_eqtl_standard_pipeline/scripts/run_eqtl_step1_nominal_only.sh"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/transcript_eqtl_standard_pipeline/scripts/run_transcript_eqtl_standard.sh",
+    "runtime": "qtl/transcript_eqtl_standard_pipeline/scripts/run_transcript_eqtl_standard.sh"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/transcript_eqtl_standard_pipeline/scripts/qc_qtl_inputs.sh",
+    "runtime": "qtl/transcript_eqtl_standard_pipeline/scripts/qc_qtl_inputs.sh"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/tuqtl_psi_preprocess_package/scripts/transcript_to_gene.R",
+    "runtime": "qtl/tuqtl_psi_preprocess_package/scripts/transcript_to_gene.R"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/tuqtl_psi_preprocess_package/scripts/filter_transcript_usage.R",
+    "runtime": "qtl/tuqtl_psi_preprocess_package/scripts/filter_transcript_usage.R"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/tuqtl_psi_preprocess_package/scripts/usage_to_qtl_bed.R",
+    "runtime": "qtl/tuqtl_psi_preprocess_package/scripts/usage_to_qtl_bed.R"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/tuqtl_psi_preprocess_package/scripts/build_tuQTL_psi_phenotype.sh",
+    "runtime": "qtl/tuqtl_psi_preprocess_package/scripts/build_tuQTL_psi_phenotype.sh"
+  },
+  {
+    "file": "script/07_Molecular_QTL/02_Fine_mapping/run_susie.py",
+    "runtime": "qtl/fine_mapping/run_susie.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/03_Conditional/map_conditional_qtl.py",
+    "runtime": "qtl/conditional/map_conditional_qtl.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/05_GWAS_coloc_SMR/prepare_smr_input.py",
+    "runtime": "qtl/GWAS/39_prepare_tuQTL_SMR_input.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/05_GWAS_coloc_SMR/build_besd.sh",
+    "runtime": "qtl/GWAS/40A_build_tuQTL_BESD_company.sh"
+  },
+  {
+    "file": "script/07_Molecular_QTL/05_GWAS_coloc_SMR/extract_candidate_qtl.py",
+    "runtime": "qtl/GWAS/42A_extract_candidate_tuQTL.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/05_GWAS_coloc_SMR/run_coloc.R",
+    "runtime": "qtl/GWAS/42C_run_coloc_company.R"
+  },
+  {
+    "file": "script/07_Molecular_QTL/03_Conditional/summarize_regions.py",
+    "runtime": "qtl/conditional/three_level_summary.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/02_Fine_mapping/group_credible_sets.py",
+    "runtime": "analysis/QTL_summary/count_pooled_cs_groups.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/02_Fine_mapping/prepare_manifest.py",
+    "runtime": "qtl/fine_mapping/prepare_manifest.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/04_Tissue_sharing/tissue_sharing.R",
+    "runtime": "analysis/QTL_summary/tissue_sharing.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/01_Mammalian_signatures/build_orthologs.py",
+    "runtime": "analysis/conservation/build_orthologs.py"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/01_Mammalian_signatures/extract_reference_20261008.py",
+    "runtime": "analysis/conservation/extract_reference_20261008.py"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/01_Mammalian_signatures/gradient_01_genes.py",
+    "runtime": "analysis/conservation/gradient_01_genes.py"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/01_Mammalian_signatures/gradient_02_annotation.R",
+    "runtime": "analysis/conservation/gradient_02_annotation.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/02_Functional_programs/compare_functional_programs.py",
+    "runtime": "analysis/conservation_programs/scripts/compare_functional_programs.py"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/02_Functional_programs/refine_program_comparisons.py",
+    "runtime": "analysis/conservation_programs/scripts/refine_program_comparisons.py"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/02_Functional_programs/tissue_pairs.py",
+    "runtime": "analysis/conservation_programs/scripts/tissue_pairs.py"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/02_Functional_programs/export_go.R",
+    "runtime": "analysis/conservation_programs/scripts/export_go.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/03_Chicken_GWAS/gwas_enrichment_expression.R",
+    "runtime": "GWAS/gwas_enrichment_expression.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/03_Chicken_GWAS/gwas_enrichment_usage.R",
+    "runtime": "GWAS/gwas_enrichment_usage.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/03_Chicken_GWAS/geneset_test.R",
+    "runtime": "GWAS/geneset_test.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/03_Chicken_GWAS/make_gwas_intervals.R",
+    "runtime": "GWAS/make_gwas_intervals.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/make_annot.sh",
+    "runtime": "LDSC/shell/make_annot.sh"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/merge_annot.R",
+    "runtime": "LDSC/shell/merge_annot.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/compute_ld_scores.sh",
+    "runtime": "LDSC/shell/compute_ld_scores.sh"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/run_ldsc.sh",
+    "runtime": "LDSC/shell/run_ldsc.sh"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/collect_ldsc_results.R",
+    "runtime": "LDSC/shell/collect_ldsc_results.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/make_base.sh",
+    "runtime": "LDSC/shell/make_base.sh"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/ASI_code/make_annot.sh",
+    "runtime": "LDSC/shell/ASI_code/make_annot.sh"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/ASI_code/merge_annot.R",
+    "runtime": "LDSC/shell/ASI_code/merge_annot.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/ASI_code/final/run_age_ldsc_binary.sh",
+    "runtime": "LDSC/shell/ASI_code/final/run_age_ldsc_binary.sh"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/ASI_code/final/run_age_ldsc_quantitative.sh",
+    "runtime": "LDSC/shell/ASI_code/final/run_age_ldsc_quantitative.sh"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/ASI_code/make_fim_annotation.sh",
+    "runtime": "LDSC/shell/ASI_code/make_fim_annotation.sh"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/merge_training_tracks_v1.py",
+    "runtime": "model/experiment33/merge_training_tracks_v1.py"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/make_unstranded_v1.py",
+    "runtime": "model/experiment33/make_unstranded_v1.py"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/train_seeded.py",
+    "runtime": "model/experiment33/gpu_scripts/train_seeded.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/05_GWAS_coloc_SMR/run_smr.sh",
+    "runtime": "qtl/GWAS/run_smr.sh"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/transcript_eqtl_standard_pipeline/scripts/check_inputs.py",
+    "runtime": "qtl/transcript_eqtl_standard_pipeline/scripts/check_inputs.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/transcript_eqtl_standard_pipeline/scripts/run_eqtl_step1.sh",
+    "runtime": "qtl/transcript_eqtl_standard_pipeline/scripts/run_eqtl_step1.sh"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/transcript_eqtl_standard_pipeline/scripts/calc_tensorqtl_fdr.R",
+    "runtime": "qtl/transcript_eqtl_standard_pipeline/scripts/calc_tensorqtl_fdr.R"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/hound_data_read_float32.py",
+    "runtime": "model/experiment33/cpu_prepare_33/hound_data_read_float32.py"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/evaluate_model_33.py",
+    "runtime": "model/experiment33/gpu_scripts/evaluate_model_33.py"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/prepare_model_inputs.py",
+    "runtime": "model/experiment33/prepare_model_inputs.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/03_Conditional/run_conditional_repair.py",
+    "runtime": "qtl/conditional/run_conditional_repair.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/03_Conditional/empirical_fallback.py",
+    "runtime": "qtl/conditional/empirical_fallback.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/02_Fine_mapping/convert_susie_summary_to_tsv.py",
+    "runtime": "qtl/fine_mapping/2.convert_susie_summary_to_tsv.py"
+  },
+  {
+    "file": "script/01_Transcriptome/04_Reference_comparison/config_7b.json",
+    "runtime": "analysis/annotation_comparison/config_7b.json"
+  },
+  {
+    "file": "script/01_Transcriptome/04_Reference_comparison/download_7w.py",
+    "runtime": "analysis/annotation_comparison/download_7w.py"
+  },
+  {
+    "file": "script/01_Transcriptome/04_Reference_comparison/config_7w.json",
+    "runtime": "analysis/annotation_comparison/config_7w.json"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/train_main_model.sh",
+    "runtime": "model/experiment33/train_main_model.sh"
+  },
+  {
+    "file": "config/recorded_inputs/short_read_samples.tsv",
+    "runtime": "analysis/short_read_validation/sample_manifest.tsv"
+  },
+  {
+    "file": "script/02_Expression_dynamics/05_Isoform_dynamics/stage_expression_inputs.py",
+    "runtime": "analysis/four_age/stage_expression_inputs.py"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/munge_sumstats.sh",
+    "runtime": "LDSC/shell/munge_sumstats.sh"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/02_make_manifest.py",
+    "runtime": "allelic/scripts/02_make_manifest.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/01_prepare_reference.py",
+    "runtime": "allelic/scripts/01_prepare_reference.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/02_LORALS/lorals_datasets.json",
+    "runtime": "allelic/scripts/lorals_datasets.json"
+  },
+  {
+    "file": "script/07_Molecular_QTL/03_Conditional/study_tissues.json",
+    "runtime": "qtl/conditional/study_tissues.json"
+  },
+  {
+    "file": "script/07_Molecular_QTL/02_Fine_mapping/input_partitions.json",
+    "runtime": "analysis/QTL_summary/input_partitions.json"
+  },
+  {
+    "file": "script/05_DNA_sequence_model/study_samples.json",
+    "runtime": "model/experiment33/study_samples.json"
+  },
+  {
+    "file": "script/07_Molecular_QTL/04_Tissue_sharing/tissue_metadata.tsv",
+    "runtime": "analysis/QTL_summary/tissue_metadata.tsv"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/iso_uqtl_mapping/filter_tensorqtl_phenotype_bed.py",
+    "runtime": "qtl/iso_uqtl_mapping/filter_tensorqtl_phenotype_bed.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/iso_uqtl_mapping/calc_tensorqtl_fdr_official.py",
+    "runtime": "qtl/iso_uqtl_mapping/calc_tensorqtl_fdr_official.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/iso_uqtl_mapping/check_inputs.py",
+    "runtime": "qtl/iso_uqtl_mapping/check_inputs.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/iso_uqtl_mapping/split_bed_by_chr.py",
+    "runtime": "qtl/iso_uqtl_mapping/split_bed_by_chr.py"
+  },
+  {
+    "file": "script/07_Molecular_QTL/01_Phenotypes_and_mapping/iso_uqtl_mapping/run_iso_uqtl.py",
+    "runtime": "qtl/iso_uqtl_mapping/run_iso_uqtl.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/03_QTL_correspondence/select_inputs.py",
+    "runtime": "analysis/allelic_QTL/select_inputs.py"
+  },
+  {
+    "file": "script/06_ASE_ASTS/03_QTL_correspondence/tissue_aliases.json",
+    "runtime": "analysis/allelic_QTL/tissue_aliases.json"
+  },
+  {
+    "file": "script/02_Expression_dynamics/06_Clustering/read_age_samples.R",
+    "runtime": "analysis/cluster/read_age_samples.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/03_Chicken_GWAS/run_gwas_enrichment.R",
+    "runtime": "GWAS/run_gwas_enrichment.R"
+  },
+  {
+    "file": "script/08_Comparative_and_complex_traits/04_Human_LDSC/build_ldsc_annotations.py",
+    "runtime": "LDSC/shell/build_ldsc_annotations.py"
+  },
+  {
+    "file": "config/recorded_inputs/ldsc_age_annotations.tsv",
+    "runtime": "LDSC/age_annotations.tsv"
+  },
+  {
+    "file": "config/recorded_inputs/human_autosomes.tsv",
+    "runtime": "LDSC/human_autosomes.tsv"
+  }
+]

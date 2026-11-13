@@ -1,0 +1,11 @@
+tissue	system	color_hex	source_label	system_color
+Hypothalamus	Neural	#6A0C8A	Hypothalamus	#9B88B5
+Pituitary	Neural	#9B59B6	Pituitary	#9B88B5
+Retina	Neural	#000000	Retina	#9B88B5
+Ovary	Reproductive	#EE9A49	Ovary	#D69B8A
+Oviduct	Reproductive	#FF8C00	Magnum	#D69B8A
+Liver	Digestive & metabolic	#FFC0CB	Liver	#82AA98
+Duodenum	Digestive & metabolic	#008000	Duodenum	#82AA98
+Cecum	Digestive & metabolic	#8FBC8F	Cecum	#82AA98
+Muscle	Muscle & adipose	#EED5B7	Pectoral	#B7A080
+Adipose	Muscle & adipose	#EEEE00	Adipose	#B7A080
